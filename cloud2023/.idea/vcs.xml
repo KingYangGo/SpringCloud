@@ -3,6 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$/SpringCloud" vcs="" />
-    <mapping directory="$PROJECT_DIR$/cloud-api-commons" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloud-api-commons" vcs="" />
   </component>
 </project>
