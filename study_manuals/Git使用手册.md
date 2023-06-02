@@ -59,3 +59,11 @@ git add . 和 git add * 的区别：git add . 会把本地所有untrack的文件
 ##### 本地仓库与远程仓库建立联系
 
  git remote add origin git@github.com:KingYangGo/SpringCloud.git
+
+##### .ssh本地密钥路径
+
+C:\Users\用户名\.ssh
+
+##### fatal: Could not read from remote repository.
+
+[(81条消息) 解决 “fatal: Could not read from remote repository.“_I'm GHB的博客-CSDN博客](https://blog.csdn.net/weixin_40922744/article/details/107576748)
