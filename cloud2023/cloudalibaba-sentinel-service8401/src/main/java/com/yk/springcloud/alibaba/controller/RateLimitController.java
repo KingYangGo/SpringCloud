@@ -8,9 +8,11 @@ import com.yk.springcloud.entities.Payment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.concurrent.TimeUnit;
+
 /**
- * @auther zzyy
- * @create 2020-02-25 15:04
+ * @auther yk
+ * @create 2023-06-3 15:04
  */
 @RestController
 public class RateLimitController
