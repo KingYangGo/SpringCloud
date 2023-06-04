@@ -7,10 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rabbitMQ-hello" />
+        <module name="rabbitMQ" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="rabbitMQ" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

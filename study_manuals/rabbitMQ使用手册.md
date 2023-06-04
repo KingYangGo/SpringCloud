@@ -15,6 +15,17 @@
 
 [(80条消息) RabbitMQ之Linux安装_linux rabbitmq user can only log in via localhost_yzm4399的博客-CSDN博客](https://blog.csdn.net/qq_43654581/article/details/121418365)
 
+#### Linux下常用命令
+
+###### 服务管理：
+
+启动服务：systemctl start rabbitmq-server
+重启服务：systemctl restart rabbitmq-server
+停止服务：systemctl stop rabbitmq-server
+查看服务状态：systemctl status rabbitmq-server
+开机自启：systemctl enable rabbitmq-server
+原文链接：https://blog.csdn.net/qq_43654581/article/details/121418365
+
 #### 学习网站
 
 [RabbitMQ - 幂等性、优先级、惰性 | OddFar's Notes](https://note.oddfar.com/pages/ee71b9/#惰性队列)
