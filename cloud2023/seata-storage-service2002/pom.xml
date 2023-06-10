@@ -7,11 +7,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>seata-order-service2001</artifactId>
+    <artifactId>seata-storage-service2002</artifactId>
     <packaging>jar</packaging>
 
-    <name>seata-order-service2001</name>
-
+    <name>seata-storage-service2002</name>
     <dependencies>
         <!--nacos-->
         <dependency>

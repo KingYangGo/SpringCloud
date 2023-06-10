@@ -67,3 +67,28 @@ C:\Users\用户名\.ssh
 ##### fatal: Could not read from remote repository.
 
 [(81条消息) 解决 “fatal: Could not read from remote repository.“_I'm GHB的博客-CSDN博客](https://blog.csdn.net/weixin_40922744/article/details/107576748)
+
+1、git stash
+
+暂存工作区修改的内容
+
+可以stash多次，从最近一次的commit读取相关内容。 
+
+2、git stash pop
+
+和 git stash 相反，git stash pop 是恢复暂存的工作区内容
+
+值得注意的是， git stash pop 获取到的是最近一次stash进去的内容，也就是说如果stash两次或者多次，那么恢复的是最新一次stash进去的内容。
+
+那要怎么查看stash了多少次呢？
+
+3、git stash list
+
+查询工作区所有stash的列表
+
+可以看到，我本地是有6个暂存的。如果想恢复stash@{2}，只需要：
+
+4、git stash apply
+
+git stash apply stash@{2}
+如果不指定，直接 git stash pop 默认恢复的就是最新一次stash
