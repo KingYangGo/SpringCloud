@@ -32,6 +32,8 @@ git config --global user.email [“yang_kang9@163.com”](mailto:\“yang_kang9@
 
 git@github.com:KingYangGo/SpringCloud.git//github仓库地址
 
+
+
 ##### **git add** 命令可将该文件添加到暂存区。
 
 添加一个或多个文件到暂存区：
@@ -57,6 +59,8 @@ git add .
 git add . 和 git add * 的区别：git add . 会把本地所有untrack的文件都加入暂存区，并且会根据 .gitignore 做过滤；但是 git add * 会忽略 .gitignore 把任何文件都加
 
 ##### 本地仓库与远程仓库建立联系
+
+git init
 
  git remote add origin git@github.com:KingYangGo/SpringCloud.git
 
@@ -92,3 +96,4 @@ C:\Users\用户名\.ssh
 
 git stash apply stash@{2}
 如果不指定，直接 git stash pop 默认恢复的就是最新一次stash
+
