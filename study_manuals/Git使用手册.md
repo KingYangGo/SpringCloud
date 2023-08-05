@@ -32,8 +32,6 @@ git config --global user.email [“yang_kang9@163.com”](mailto:\“yang_kang9@
 
 git@github.com:KingYangGo/SpringCloud.git//github仓库地址
 
-
-
 ##### **git add** 命令可将该文件添加到暂存区。
 
 添加一个或多个文件到暂存区：
@@ -96,4 +94,28 @@ C:\Users\用户名\.ssh
 
 git stash apply stash@{2}
 如果不指定，直接 git stash pop 默认恢复的就是最新一次stash
+
+##### git branch -M main
+
+`git branch -M main` 命令会将本地分支 `main` 的名称更改为 `main`,同时也会将本地分支 `main` 与远程分支 `main` 的名称保持一致。因此，在执行了这个命令后，本地分支 `main` 与远程分支 `main` 的名称已经一致，如果需要将本地分支 `main` 恢复为原始名称，可以使用 `git branch -u` 命令将本地分支 `main` 的链接重新指向远程分支 `main`,或者使用 `git reset` 命令将本地分支 `main` 恢复到原始状态。
+
+[git常用命令的解释 (xjx100.cn)](https://www.xjx100.cn/news/176762.html?action=onClick)
+
+##### git push -uf origin main
+
+在这个命令中，`-u` 是一个选项，表示将本地分支与远程分支进行关联。这样，在以后的推送操作中，您只需使用`git push`，Git就会自动将更改推送到正确的远程分支。
+
+`-f` 是一个选项，表示强制推送。如果远程分支已经存在，并且您想要覆盖远程分支的内容，可以使用该选项。
+
+`origin` 是远程仓库的名称，通常是您克隆或添加的远程仓库的默认名称。
+
+`main` 是要推送到远程仓库的本地分支的名称。
+
+综上所述，`git push -uf origin main` 命令的作用是将本地分支的更改强制推送到名为`origin`的远程仓库的`main`分支。
+
+`origin` 后面并没有省略默认的远程分支名称。在 `git push` 命令中，`origin` 是指远程仓库的名称，而不是远程分支的名称。
+
+通常情况下，当您克隆一个远程仓库时，Git会自动为您设置一个默认的远程分支名称，通常是与本地分支名称相同。因此，如果您在本地有一个名为 `main` 的分支，并且克隆的远程仓库也有一个名为 `main` 的分支，那么 `git push -uf origin main` 命令将会将本地的 `main` 分支推送到远程仓库的 `main` 分支。
+
+如果您想要将本地分支推送到远程仓库的不同分支，可以在命令中指定远程分支的名称，例如 `git push -uf origin local-branch:remote-branch`，其中 `local-branch` 是本地分支的名称，`remote-branch` 是远程分支的名称。
 
