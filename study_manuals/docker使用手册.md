@@ -102,6 +102,16 @@ Docker exec -it mymysql
 
 Redis-cli
 
+#### Docker容器搭建nginx
+
+docker run -p 80:80 --name nginx -d nginx:1.10
+
+docker container cp nginx:/etc/nginx  //复制nginx容器的配置到当前目录下
+
+docker run -p 80:80 --name nginx -v /mydata/nginx/html:/usr/share/nginx/html -v /mydata/nginx/logs:/var/log/nginx -v /mydata/nginx/conf:/etc/nginx  -d nginx:1.10
+
+set number
+
 #### Linux搭建Mysql报错
 
 ##### **mysqld: Can‘t read dir of ‘/etc/mysql/conf.d/‘ (Errcode: 2 - No such file or directory**
@@ -110,4 +120,37 @@ Redis-cli
 
 #### 设置容器实例跟随docker自动启动
 
-docker update mysql --restart=always
+docker update nginx --restart=always
+
+docker update elasticsearch --restart=always
+
+#### 搭建elasticsearch
+
+/mydata/elasticsearch/config/elasticsearch.yml : /usr/share/elasticsearch/config/elasticsearch.yml
+
+/mydata/elasticsearch/data : /usr/share/elasticsearch/data
+
+/mydata/elasticsearch/plugins : /usr/share/elasticsearch/plugins
+
+#### window安装nginx
+
+**start nginx**
+
+nginx -s reload
+
+nginx -s stop
+
+netstat -ano
+
+netstat -aon|findstr "80"
+
+[taskkill](https://so.csdn.net/so/search?q=taskkill&spm=1001.2101.3001.7020) /t /f /pid
+
+
+
+过滤字段配置没有预制逻辑删除
+
+仓库字段预制逻辑删除为0
+
+到货入库、退货单入库
+
